@@ -8,18 +8,19 @@
 
 /*  HOME   +   Header  + Logo-nav    */
 
-main {
-    border: 1px solid white;
+.container {
     background-color: var(--primary-color);
-    height: 100vh;
-}
-
-#bg-image {
     
 }
+.home {
+    max-width: 1380px;
+    min-width: 450px;
+    height: 100vh;
+    min-height: 350px;
+}
 
 
-main .header {
+.header {
     width: 100%;
     height: 80px;
     display: flex;
@@ -27,115 +28,170 @@ main .header {
     align-items: center;
 }
 
-main .header .logo {
+.header .logo {
     font-family: var(--first-font);
     font-size: 1.3rem;
     letter-spacing: 2px;
     cursor: pointer;
+    transition: all 03s ease-out;
 }
-main .header .logo h2 {
+.header .logo:hover h2 {
+    color: var(--secondary-color);
+}
+.header .logo:hover span {
     color: #fff;
 }
-main .header .logo span {
+.header .logo h2 {
+    color: #fff;
+}
+.header .logo span {
     color: var(--secondary-color);
 }
 
 
-main .header .navbar {
-}
-main .header .navbar ul {
+.header .navbar ul {
     display: flex;
     list-style: none;
 }
-main .header .navbar li {
+.header .navbar li {
     margin: 0px 10px;
     padding: 3px;
     transition: all .9s ease;
 }
-main .header .navbar li:hover {
-    border-bottom: 1px solid #fff;
+.header .navbar a:hover {
+    color: var(--therdy-color);
 }
-main .header .navbar a {
+.header .navbar a {
     color: #fff;
     padding: 7px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     letter-spacing: 1px;
+    transition: all .4s ease;
 }
 
 /*  HOME   +   Title  + Image    */
 
 
-main .title-image {
-    width: 100%;
-    height: 100%;
+.title-image {
     display: flex;
+    background: url(../img/young\ maylon\ armcrossed.png) no-repeat top;
+    height: 100vh;
+    min-height: 500px;
+}
+.title-image .title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
-main .title-image .title {
-
-    width: 50%;
-    height:90%;
-    color: #fff;
-    
-}
-main .title-image .title .text-btn {
+.title-image .title .text-btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin-left: 80px;
-    width: 80%;
-    height: 60%;
+    margin-left: 60px;
+    height: 100%;
     font-family: var( --first-font);
+    color: #fff;
 }
-main .title-image .title .text-btn p {
+.title-image .title .text-btn p {
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
-main .title-image .title .text-btn h1 {
+.title-image .title .text-btn h1 {
     font-size: 2.7rem;
     letter-spacing: 1px;
 }
-main .title-image .title .text-btn h2 {
+.title-image .title .text-btn h2 {
     font-size: 1.8rem;
     font-weight: 400;
 }
-main .title-image .title .text-btn button {
+.title-image .title .text-btn button {
     padding: 12px;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: var(--therdy-color);
     color: #fff;
     font-size: 1.3rem;
-    width: 35%;
+    width: 200px;
     outline: none;
     border: none;
     border-radius: 7px;
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
-main .title-image .title .text-btn button:hover {
-    background-color: var(--secondary-color);
+.title-image .title .text-btn button:hover {
+    background-color: var(--primary-color);
+    border:1px solid var(--therdy-color);
+    color: var(--therdy-color);
 }
 
 
-
-
-
-main .title-image .image {
-    width: 50%;
-    height: 90%;
+.title-image .title .text-btn2 {
     display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100%;
+}
+.title-image .title .text-btn2 a {
+    margin: 30px;
+    padding: 7px;
+}
+.title-image .title .text-btn2 ion-icon {
+    color: var(--therdy-color);
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    transition: all .3s ease;
+}
+.title-image .title .text-btn2 ion-icon:hover {
+    color: #fff;
+}
+
+
+/*  ABOUT     */
+
+
+.about {
+    height: 100vh;
+}
+.about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid red;
+    height: 100vh;
+    background-color: #fff;
+}
+.about .perfil-sobre {
+    border: 3px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100px;
+    width: 100%;
+    margin: 30px auto;
+}
+.about .content-main {
+    border: 3px solid green;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     justify-content: center;
 }
-main .title-image .image .bg {
-    border-radius: 50%;
-    background-color: rgb(24, 22, 22, 0.7);
-    box-shadow: 3px 3px 15px gray;
+.about .content-main .image {
+    border: 3px solid pink;
+    background: url(../img/maylon-linkdin-removebg-preview.png) no-repeat center;
+    height: 100vh;
+    width: 50%;
+    display: block;
+
 }
-main .title-image .image  img {
-    width: 80%;
-    padding: 50px;
-    
+
+.about .content-main .text-btn {
+    border: 3px solid purple;
+    width: 50%;
 }
