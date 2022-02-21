@@ -1,0 +1,141 @@
+@import "variavel.css";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*  HOME   +   Header  + Logo-nav    */
+
+main {
+    border: 1px solid white;
+    background-color: var(--primary-color);
+    height: 100vh;
+}
+
+#bg-image {
+    
+}
+
+
+main .header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .header .logo {
+    font-family: var(--first-font);
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+main .header .logo h2 {
+    color: #fff;
+}
+main .header .logo span {
+    color: var(--secondary-color);
+}
+
+
+main .header .navbar {
+}
+main .header .navbar ul {
+    display: flex;
+    list-style: none;
+}
+main .header .navbar li {
+    margin: 0px 10px;
+    padding: 3px;
+    transition: all .9s ease;
+}
+main .header .navbar li:hover {
+    border-bottom: 1px solid #fff;
+}
+main .header .navbar a {
+    color: #fff;
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/*  HOME   +   Title  + Image    */
+
+
+main .title-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .title-image .title {
+
+    width: 50%;
+    height:90%;
+    color: #fff;
+    
+}
+main .title-image .title .text-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 80px;
+    width: 80%;
+    height: 60%;
+    font-family: var( --first-font);
+}
+main .title-image .title .text-btn p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+main .title-image .title .text-btn h1 {
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+}
+main .title-image .title .text-btn h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+main .title-image .title .text-btn button {
+    padding: 12px;
+    margin-top: 10px;
+    background-color: var(--therdy-color);
+    color: #fff;
+    font-size: 1.3rem;
+    width: 35%;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+main .title-image .title .text-btn button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+
+
+
+main .title-image .image {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+main .title-image .image .bg {
+    border-radius: 50%;
+    background-color: rgb(24, 22, 22, 0.7);
+    box-shadow: 3px 3px 15px gray;
+}
+main .title-image .image  img {
+    width: 80%;
+    padding: 50px;
+    
+}

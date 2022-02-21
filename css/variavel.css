@@ -1,0 +1,12 @@
+:root {
+    --primary-color:#0b0c0d;
+    --secondary-color:#1d5943;
+    --therdy-color:#1d734b;
+    --foruth-color:#247051;
+
+    --first-font: 'Palanquin Dark', sans-serif;
+    --second-font:'Oxanium', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&display=swap');
