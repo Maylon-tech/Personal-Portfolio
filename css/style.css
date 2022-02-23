@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Oxanium", sans-serif;
 }
 
 /*  HOME   +   Header  + Logo-nav    */
@@ -75,7 +76,8 @@
 
 .title-image {
     display: flex;
-    background: url(../img/young\ maylon\ armcrossed.png) no-repeat top;
+    background: url(../img/Maylon_Crawn-removebg-preview.png) no-repeat top;
+    background-position-x: 600px, right;
     height: 100vh;
     min-height: 500px;
 }
@@ -95,6 +97,7 @@
     height: 100%;
     font-family: var( --first-font);
     color: #fff;
+    opacity: 0;
 }
 .title-image .title .text-btn p {
     font-size: 1.2rem;
@@ -108,6 +111,24 @@
     font-size: 1.8rem;
     font-weight: 400;
 }
+
+.title-image .title .slide-right {
+    animation: slider 1.7s linear forwards;
+} 
+
+.text-btn h1.slide-right {
+    animation-delay: 1s;
+}
+
+.text-btn h2.slide-right {
+    animation-delay: 2.6s;
+}
+
+.text-btn #btn-home.slide-right {
+    animation-delay: 3.5s;
+}
+
+
 .title-image .title .text-btn button {
     padding: 12px;
     margin-top: 20px;
@@ -161,37 +182,106 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 3px solid red;
     height: 100vh;
     background-color: #fff;
 }
+
 .about .perfil-sobre {
-    border: 3px solid blue;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height:100px;
+    height:10vh;
     width: 100%;
-    margin: 30px auto;
+    margin: 10px auto;
 }
+.about .perfil-sobre h1 {
+    font-size: 2.5rem;
+    margin-top: 60px;
+}
+.about .perfil-sobre h3 {
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+}
+
+/*  ADICIONAR O BEFORE E O AFTER NO H3  */
+
 .about .content-main {
-    border: 3px solid green;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
     justify-content: center;
 }
 .about .content-main .image {
-    border: 3px solid pink;
-    background: url(../img/maylon-linkdin-removebg-preview.png) no-repeat center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     width: 50%;
-    display: block;
-
+}
+.about .content-main .image img {
+    
+    background-color: rgba(151, 146, 146, 0.76);
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
 }
 
 .about .content-main .text-btn {
-    border: 3px solid purple;
     width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.about .content-main .text-btn h2 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+.about .content-main .text-btn span {
+    color: var(--secondary-color);
+}
+.about .content-main .text-btn p {
+    line-height: 25px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+    padding: 5px;
+}
+.about .content-main .text-btn button {
+    padding: 12px;
+    background-color: var(--therdy-color);
+    color: #fff;
+    font-size: 1.3rem;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.about .content-main .text-btn button:hover {
+    background-color: #fff;
+    border:2px solid var(--therdy-color);
+    color: var(--therdy-color);
+    font-weight: bold;
+}
+
+
+
+
+@keyframes slider {
+    0% {
+        transform: translate(100px);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(50px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
 }
