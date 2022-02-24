@@ -1,0 +1,14 @@
+@keyframes slider {
+    0% {
+        transform: translate(100px);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(50px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
