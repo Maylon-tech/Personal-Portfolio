@@ -286,7 +286,7 @@
     margin: 10px auto;
 }
 .experience .perfil-sobre h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 60px;
     color: #fff;
 }
@@ -435,13 +435,47 @@
 
 
 
+/* PROJETOS */
 
 
+.project {
+    border: 2px solid red;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.project .lista-projetos {
+    border: 2px solid blue;
+    margin: 40px auto;
+}
+.project .lista-projetos h1 {
+    font-size: 2rem; 
+    color: var(--secondary-color);
+}
 
 
+.project .project-container {
+    border: 2px solid green;
+    width: 80%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    grid-gap: 30px;
+   
+}
 
-
-
+.project .project-container .project-box {
+    border: 2px solid purple;
+    background-color: cadetblue;
+    border-radius: 7px;
+    width: 200px;
+    height: 250px;
+    padding: 50px;
+     margin: 0 auto;
+}
 
 
 
