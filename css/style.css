@@ -29,7 +29,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
-    background: rgba(1, 1, 1, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     transition: all 0.3s ease;
 }
 .header.sticky {
@@ -150,7 +150,7 @@
 }
 
 .text-btn h2.slide-right {
-    animation-delay: 2.6s;
+    animation-delay: 1.6s;
 }
 
 .text-btn #btn-home.slide-right {
@@ -249,11 +249,15 @@
     width: 50%;
 }
 .about .content-main .image img {
-    
+    box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.6);
     background-color: rgba(151, 146, 146, 0.76);
     border-radius: 10px;
     width: 400px;
     height: 400px;
+}
+
+.anima-text {
+    animation: slider 1.6s linear forwards;
 }
 
 .about .content-main .text-btn {
@@ -277,6 +281,7 @@
     margin-bottom: 20px;
     overflow-x: hidden;
     padding: 5px;
+    opacity: 0;
 }
 .about .content-main .text-btn button {
     padding: 12px;
@@ -289,6 +294,7 @@
     border-radius: 7px;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    opacity: 0;
 }
 .about .content-main .text-btn button:hover {
     background-color: #fff;

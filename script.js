@@ -58,3 +58,12 @@ formulario.onsubmit = (e) => {
         formulario.submit()
     }
 }
+
+const autoComplete = document.querySelector('.auto-complete')
+
+    var typed = new Typed('.autoComplete', {
+        strings: ["Freelancer", "Desenvolvedor", "Hacker Ético"], 
+        typeSpeed: 160,
+        backSpeed: 140,
+        loop: true
+    })
